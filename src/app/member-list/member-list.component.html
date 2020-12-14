@@ -20,7 +20,14 @@
   <!-- Name Column -->
   <ng-container matColumnDef="name">
     <th mat-header-cell class="px-12" *matHeaderCellDef> Name</th>
-    <td mat-cell class="px-12" *matCellDef="let element"> {{element.name}} </td>
+    <td mat-cell class="px-12" *matCellDef="let element">
+      <!-- TODO: change image src with the value of photo url-->
+      <img class="s-48" style="width: 48px; height: 48px;"
+           [src]="'https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Avatar_icon_green.svg/1024px-Avatar_icon_green.svg.png'"
+           alt="photo"/>
+
+      {{element.nom + ' ' + element.prenom}}
+    </td>
   </ng-container>
 
   <!-- Weight Column -->
