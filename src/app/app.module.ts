@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {SharedModule} from '../@root/shared.module';
 import { MemberFormComponent } from './member-form/member-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MemberListComponent,
-    MemberFormComponent
+    MemberFormComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
